@@ -1,13 +1,15 @@
 public class Planet{
-  int[] loc;
+  float[] loc;
   color myColor;
   int mySize;
-  int dx, dy;
+  float dx, dy;
   String name;
+  boolean  following;
   
   public Planet(){
     println("making an planet");
-    loc = new int[2];
+    loc = new float[2];
+    following = false;
     assignDefaultValues();
   }
   
